@@ -13,6 +13,7 @@ namespace Modern_Auto
 {
     public partial class Form_Customer_Add : Form
     {
+        private DataSet ds;
         private int Customer_ID;
 
         public Form_Customer_Add()
@@ -90,7 +91,20 @@ namespace Modern_Auto
 
         private void RefForm()
         {
+            bt_save.Enabled = true;
+            bt_edit.Enabled = false;
+            pictureBox1.BackgroundImage = null;
+            comboBox1.Text = "اختار نوع السيارة";
+
+
             tb_name.Text = tb_phone.Text = tb_kilo.Text = tb_carShaseh.Text = tb_carNumber.Text = "";
+
+            using (ds = Ezzat.GetDataSet("Customer_selectAll","X"))
+            {
+                dataGridView1.DataSource = ds.Tables["X"];
+            }
+
+
         }
 
         private void SaveData()
@@ -143,6 +157,63 @@ namespace Modern_Auto
                 , new SqlParameter("@Kilomaters", tb_kilo.Text)
                 , new SqlParameter("@Customer_ID", Customer_ID)
                 );
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            RefForm();
+        }
+
+        private void Form_Customer_Add_Load(object sender, EventArgs e)
+        {
+            RefForm();
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            using (ds=Ezzat.GetDataSet("Customer_selectSearch", "X",new SqlParameter("text",textBox6.Text)))
+            {
+                dataGridView1.DataSource = ds.Tables["X"];
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Customer_ID = (int)dataGridView1.CurrentRow.Cells[0].Value;
+            ShowDetails(Customer_ID);
+        }
+
+        private void ShowDetails(int customer_ID)
+        {
+            bt_edit.Enabled = true;
+            bt_save.Enabled = false;
+
+            SqlConnection con;
+            SqlDataReader dataReader = Ezzat.GetDataReader("Customer_selectSearch_BYID", out con, new SqlParameter("@Customer_Id", customer_ID));
+
+
+            if (dataReader.HasRows)
+            {
+                while (dataReader.Read())
+                {
+                    tb_name.Text = dataReader["Customer_Name"].ToString();
+                    tb_carNumber.Text = dataReader["Car_Number"].ToString();
+                    tb_carShaseh.Text = dataReader["Car_Chaseh"].ToString();
+                    comboBox1.Text = dataReader["Car_Type"].ToString();
+                    tb_phone.Text = dataReader["Customer_Phone"].ToString();
+                    tb_kilo.Text = dataReader["Kilomaters"].ToString();
+                  
+
+                }
+            }
+            con.Close();
+
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            RefForm();
         }
     }
 }

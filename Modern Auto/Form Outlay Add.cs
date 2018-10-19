@@ -16,5 +16,22 @@ namespace Modern_Auto
         {
             InitializeComponent();
         }
+
+        private void bt_save_Click(object sender, EventArgs e)
+        {
+            if(txt_Name.Text!="")
+            {
+                SaveData();
+            }
+        }
+
+        private void SaveData()
+        {
+            Ezzat.ExecutedNoneQuery("Outlay_insertOutlay", new System.Data.SqlClient.SqlParameter("@Band_Name", txt_Name.Text));
+
+            MessageBox.Show(SharedParameter.Add_Message);
+
+            txt_Name.Text = "";
+        }
     }
 }

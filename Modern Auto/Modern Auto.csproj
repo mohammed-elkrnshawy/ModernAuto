@@ -203,6 +203,9 @@
     <EmbeddedResource Include="Form Outlay Account.resx">
       <DependentUpon>Form Outlay Account.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form Outlay Add.resx">
+      <DependentUpon>Form Outlay Add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Outlay Payment.resx">
       <DependentUpon>Form Outlay Payment.cs</DependentUpon>
     </EmbeddedResource>

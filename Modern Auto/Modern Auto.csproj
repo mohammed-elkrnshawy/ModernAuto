@@ -282,5 +282,17 @@
   <ItemGroup>
     <None Include="Resources\search %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addition-sign %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print-black-printer-tool-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-disk %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

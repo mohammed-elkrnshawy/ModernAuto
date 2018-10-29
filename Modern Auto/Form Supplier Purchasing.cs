@@ -53,8 +53,8 @@ namespace Modern_Auto
             }
 
             dataGridView1.Rows.Clear();
-            txt_afterDiscount.Text = txt_afterPayment.Text = txt_billNumber.Text = txt_billNumberSupplier.Text = txt_discount.Text = "0.00";
-            txt_oldTotal.Text = txt_payment.Text = txt_Price.Text = txt_quantity.Text = txt_total.Text = txt_totalMaterial.Text = "0.00";
+            txt_afterDiscount.Text = txt_afterPayment.Text = txt_discount.Text = "0.00";
+            txt_oldTotal.Text = txt_payment.Text = txt_Price.Text = txt_quantity.Text = txt_total.Text = txt_totalMaterial.Text = "0";
 
         }
 

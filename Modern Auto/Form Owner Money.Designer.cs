@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.bt_Save = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -44,7 +45,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bt_Save = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -114,9 +114,9 @@
             // 
             // tb_money
             // 
-            this.tb_money.Location = new System.Drawing.Point(544, 107);
+            this.tb_money.Location = new System.Drawing.Point(472, 107);
             this.tb_money.Name = "tb_money";
-            this.tb_money.Size = new System.Drawing.Size(174, 20);
+            this.tb_money.Size = new System.Drawing.Size(246, 20);
             this.tb_money.TabIndex = 26;
             this.tb_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -151,6 +151,24 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1386, 222);
             this.panel6.TabIndex = 2;
+            // 
+            // bt_Save
+            // 
+            this.bt_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.bt_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
+            this.bt_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_Save.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_Save.ForeColor = System.Drawing.Color.White;
+            this.bt_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_Save.Location = new System.Drawing.Point(11, 107);
+            this.bt_Save.Name = "bt_Save";
+            this.bt_Save.Size = new System.Drawing.Size(75, 37);
+            this.bt_Save.TabIndex = 3;
+            this.bt_Save.Text = "حفظ";
+            this.bt_Save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_Save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_Save.UseVisualStyleBackColor = false;
+            this.bt_Save.Click += new System.EventHandler(this.bt_Save_Click);
             // 
             // panel1
             // 
@@ -226,24 +244,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "رقم البيان";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bt_Save
-            // 
-            this.bt_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.bt_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
-            this.bt_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_Save.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.bt_Save.ForeColor = System.Drawing.Color.White;
-            this.bt_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_Save.Location = new System.Drawing.Point(11, 107);
-            this.bt_Save.Name = "bt_Save";
-            this.bt_Save.Size = new System.Drawing.Size(75, 37);
-            this.bt_Save.TabIndex = 3;
-            this.bt_Save.Text = "حفظ";
-            this.bt_Save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bt_Save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_Save.UseVisualStyleBackColor = false;
-            this.bt_Save.Click += new System.EventHandler(this.bt_Save_Click);
             // 
             // Form_Owner_Money
             // 

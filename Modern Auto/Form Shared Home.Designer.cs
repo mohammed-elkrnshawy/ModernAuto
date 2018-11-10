@@ -289,15 +289,15 @@
             // ايداعوصرفاموالToolStripMenuItem
             // 
             this.ايداعوصرفاموالToolStripMenuItem.Name = "ايداعوصرفاموالToolStripMenuItem";
-            this.ايداعوصرفاموالToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.ايداعوصرفاموالToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.ايداعوصرفاموالToolStripMenuItem.Text = "ايداع و صرف اموال";
             this.ايداعوصرفاموالToolStripMenuItem.Click += new System.EventHandler(this.ايداعوصرفاموالToolStripMenuItem_Click);
             // 
             // ايداعوصرفبضاعةToolStripMenuItem
             // 
             this.ايداعوصرفبضاعةToolStripMenuItem.Name = "ايداعوصرفبضاعةToolStripMenuItem";
-            this.ايداعوصرفبضاعةToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
-            this.ايداعوصرفبضاعةToolStripMenuItem.Text = "ايداع و صرف بضاعة";
+            this.ايداعوصرفبضاعةToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.ايداعوصرفبضاعةToolStripMenuItem.Text = "الحساب";
             this.ايداعوصرفبضاعةToolStripMenuItem.Click += new System.EventHandler(this.ايداعوصرفبضاعةToolStripMenuItem_Click);
             // 
             // tabControl1

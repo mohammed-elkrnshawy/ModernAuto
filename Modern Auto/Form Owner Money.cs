@@ -91,7 +91,7 @@ namespace Modern_Auto
             Ezzat.ExecutedNoneQuery("Safe_insertTransaction",
                 new SqlParameter("@Report_Type", false),
                 new SqlParameter("@Bill_ID", int.Parse(textBox1.Text)),
-                new SqlParameter("@Bill_Type", "تسديد الى مورد"),
+                new SqlParameter("@Bill_Type", "دفع الى رأس المال"),
                 new SqlParameter("@Report_Date", DateTime.Parse(DateTime.Now.ToString())),
                 new SqlParameter("@Report_Money", float.Parse(tb_money.Text)),
                 new SqlParameter("@Report_Notes", richTextBox1.Text)
@@ -107,7 +107,7 @@ namespace Modern_Auto
             Ezzat.ExecutedNoneQuery("Safe_insertTransaction",
                 new SqlParameter("@Report_Type", true),
                 new SqlParameter("@Bill_ID", int.Parse(textBox1.Text)),
-                new SqlParameter("@Bill_Type", "تسديد من عميل"),
+                new SqlParameter("@Bill_Type", "دفع من رأس المال"),
                 new SqlParameter("@Report_Date", DateTime.Parse(DateTime.Now.ToString())),
                 new SqlParameter("@Report_Money", float.Parse(tb_money.Text)),
                 new SqlParameter("@Report_Notes", richTextBox1.Text)

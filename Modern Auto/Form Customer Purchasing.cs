@@ -207,6 +207,7 @@ namespace Modern_Auto
                     , new SqlParameter("@Unit", item.Cells[4].Value.ToString())
                     , new SqlParameter("@Total", float.Parse(item.Cells[5].Value + ""))
                     , new SqlParameter("@Bill_Type", false)
+                    , new SqlParameter("@Bill_Date", DateTime.Parse(DateTime.Now.ToString()))
                     );
             }
         }

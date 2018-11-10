@@ -28,60 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_money = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.panel1.SuspendLayout();
+            this.bt_Save = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(310, 152);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox1.Size = new System.Drawing.Size(408, 143);
-            this.richTextBox1.TabIndex = 28;
-            this.richTextBox1.Text = "لا يوجد ملاحظات";
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(0, 458);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1386, 222);
-            this.panel6.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(8, 8);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1386, 680);
-            this.panel1.TabIndex = 4;
             // 
             // panel5
             // 
@@ -92,13 +61,46 @@
             this.panel5.Controls.Add(this.radioButton1);
             this.panel5.Controls.Add(this.richTextBox1);
             this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.textBox4);
+            this.panel5.Controls.Add(this.tb_money);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(0, 105);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1386, 348);
             this.panel5.TabIndex = 1;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioButton2.Location = new System.Drawing.Point(472, 56);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(96, 17);
+            this.radioButton2.TabIndex = 30;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "صرف من الخزنة";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioButton1.Location = new System.Drawing.Point(622, 56);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(96, 17);
+            this.radioButton1.TabIndex = 29;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "ايداع فى الخزنة";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(310, 152);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox1.Size = new System.Drawing.Size(408, 143);
+            this.richTextBox1.TabIndex = 28;
+            this.richTextBox1.Text = "لا يوجد ملاحظات";
             // 
             // label8
             // 
@@ -110,13 +112,13 @@
             this.label8.Text = "البيان";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // tb_money
             // 
-            this.textBox4.Location = new System.Drawing.Point(544, 107);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(174, 20);
-            this.textBox4.TabIndex = 26;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_money.Location = new System.Drawing.Point(544, 107);
+            this.tb_money.Name = "tb_money";
+            this.tb_money.Size = new System.Drawing.Size(174, 20);
+            this.tb_money.TabIndex = 26;
+            this.tb_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -137,6 +139,31 @@
             this.label3.TabIndex = 23;
             this.label3.Text = "نوع البيان";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.bt_Save);
+            this.panel6.Location = new System.Drawing.Point(0, 458);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1386, 222);
+            this.panel6.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1386, 680);
+            this.panel1.TabIndex = 5;
             // 
             // panel2
             // 
@@ -200,29 +227,23 @@
             this.label2.Text = "رقم البيان";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton1
+            // bt_Save
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioButton1.Location = new System.Drawing.Point(622, 56);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(96, 17);
-            this.radioButton1.TabIndex = 29;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "ايداع فى الخزنة";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioButton2.Location = new System.Drawing.Point(472, 56);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(96, 17);
-            this.radioButton2.TabIndex = 30;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "صرف من الخزنة";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.bt_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.bt_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
+            this.bt_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_Save.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_Save.ForeColor = System.Drawing.Color.White;
+            this.bt_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_Save.Location = new System.Drawing.Point(11, 107);
+            this.bt_Save.Name = "bt_Save";
+            this.bt_Save.Size = new System.Drawing.Size(75, 37);
+            this.bt_Save.TabIndex = 3;
+            this.bt_Save.Text = "حفظ";
+            this.bt_Save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_Save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_Save.UseVisualStyleBackColor = false;
+            this.bt_Save.Click += new System.EventHandler(this.bt_Save_Click);
             // 
             // Form_Owner_Money
             // 
@@ -234,9 +255,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Owner_Money";
             this.Text = "Form_Owner_Money";
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Form_Owner_Money_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -246,21 +269,22 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_money;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button bt_Save;
     }
 }

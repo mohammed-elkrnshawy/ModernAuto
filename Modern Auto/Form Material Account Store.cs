@@ -31,6 +31,38 @@ namespace Modern_Auto
                 dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             }
+
+            FillGrid_During(dateTimePicker1.Value, dateTimePicker2.Value);
+
+        }
+
+        private void FillGrid_During(DateTime StartDateTime, DateTime EndDateTime)
+        {
+            dataGridView2.Rows.Clear();
+            SqlConnection con;
+
+            SqlDataReader dataReader = Ezzat.GetDataReader("Product_selectAll", out con);
+
+
+            if (dataReader.HasRows)
+            {
+                while (dataReader.Read())
+                {
+                    dataGridView2.Rows.Add();
+                    dataGridView2[0, dataGridView2.Rows.Count - 1].Value = dataReader[0].ToString();
+                    dataGridView2[1, dataGridView2.Rows.Count - 1].Value = dataReader[1].ToString();
+                    dataGridView2[2, dataGridView2.Rows.Count - 1].Value = Ezzat.ExecutedScalar("Material_IM"
+                                                        , new SqlParameter("@Day", dateTimePicker1.Value)
+                                                        , new SqlParameter("@Day2", dateTimePicker2.Value)
+                                                        , new SqlParameter("@product_ID", dataReader[0])
+                                                        );
+                    dataGridView2[3, dataGridView2.Rows.Count - 1].Value = Ezzat.ExecutedScalar("Material_EX"
+                                                        , new SqlParameter("@Day", dateTimePicker1.Value)
+                                                        , new SqlParameter("@Day2", dateTimePicker2.Value)
+                                                        , new SqlParameter("@product_ID", dataReader[0])
+                                                        );
+                }
+            }
         }
     }
 }

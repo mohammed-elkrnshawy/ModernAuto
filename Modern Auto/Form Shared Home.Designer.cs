@@ -45,14 +45,12 @@
             this.اضافةالاصنافToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.خردالمخازنToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تحركاتالمخازنToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.تحركاتالاصنافToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.المصروفاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.اضافةبندمصروفاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تحريربيانمصروفاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حسابمصروفاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.الخزنةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حركاتالخزنةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.اجمالىالربحToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.رأسالمالToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ايداعوصرفاموالToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ايداعوصرفبضاعةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -186,8 +184,7 @@
             this.الاصنافوالمخازنToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.اضافةالاصنافToolStripMenuItem,
             this.خردالمخازنToolStripMenuItem,
-            this.تحركاتالمخازنToolStripMenuItem,
-            this.تحركاتالاصنافToolStripMenuItem});
+            this.تحركاتالمخازنToolStripMenuItem});
             this.الاصنافوالمخازنToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.الاصنافوالمخازنToolStripMenuItem.Name = "الاصنافوالمخازنToolStripMenuItem";
             this.الاصنافوالمخازنToolStripMenuItem.Size = new System.Drawing.Size(141, 25);
@@ -213,13 +210,6 @@
             this.تحركاتالمخازنToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
             this.تحركاتالمخازنToolStripMenuItem.Text = "تحركات المخازن";
             this.تحركاتالمخازنToolStripMenuItem.Click += new System.EventHandler(this.تحركاتالمخازنToolStripMenuItem_Click);
-            // 
-            // تحركاتالاصنافToolStripMenuItem
-            // 
-            this.تحركاتالاصنافToolStripMenuItem.Name = "تحركاتالاصنافToolStripMenuItem";
-            this.تحركاتالاصنافToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
-            this.تحركاتالاصنافToolStripMenuItem.Text = "تحركات الاصناف";
-            this.تحركاتالاصنافToolStripMenuItem.Click += new System.EventHandler(this.تحركاتالاصنافToolStripMenuItem_Click);
             // 
             // المصروفاتToolStripMenuItem
             // 
@@ -256,8 +246,7 @@
             // الخزنةToolStripMenuItem
             // 
             this.الخزنةToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.حركاتالخزنةToolStripMenuItem,
-            this.اجمالىالربحToolStripMenuItem});
+            this.حركاتالخزنةToolStripMenuItem});
             this.الخزنةToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.الخزنةToolStripMenuItem.Name = "الخزنةToolStripMenuItem";
             this.الخزنةToolStripMenuItem.Size = new System.Drawing.Size(59, 25);
@@ -266,15 +255,9 @@
             // حركاتالخزنةToolStripMenuItem
             // 
             this.حركاتالخزنةToolStripMenuItem.Name = "حركاتالخزنةToolStripMenuItem";
-            this.حركاتالخزنةToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.حركاتالخزنةToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.حركاتالخزنةToolStripMenuItem.Text = "حركات الخزنة";
             this.حركاتالخزنةToolStripMenuItem.Click += new System.EventHandler(this.حركاتالخزنةToolStripMenuItem_Click);
-            // 
-            // اجمالىالربحToolStripMenuItem
-            // 
-            this.اجمالىالربحToolStripMenuItem.Name = "اجمالىالربحToolStripMenuItem";
-            this.اجمالىالربحToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
-            this.اجمالىالربحToolStripMenuItem.Text = "اجمالى الربح";
             // 
             // رأسالمالToolStripMenuItem
             // 
@@ -387,14 +370,12 @@
         private System.Windows.Forms.ToolStripMenuItem اضافةالاصنافToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem خردالمخازنToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تحركاتالمخازنToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem تحركاتالاصنافToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem المصروفاتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem اضافةبندمصروفاتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تحريربيانمصروفاتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem حسابمصروفاتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem الخزنةToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem حركاتالخزنةToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem اجمالىالربحToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem رأسالمالToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ايداعوصرفاموالToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ايداعوصرفبضاعةToolStripMenuItem;

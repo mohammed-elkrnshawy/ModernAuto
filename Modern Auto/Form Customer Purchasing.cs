@@ -235,5 +235,38 @@ namespace Modern_Auto
             Ezzat.ExecutedNoneQuery("Customer_updateTotalMoney", new SqlParameter("@Customer_ID", combo_car.SelectedValue),
                new SqlParameter("@Total_Money", double.Parse(txt_Render.Text)));
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (combo_car.SelectedIndex >= 0 && dataGridView1.Rows.Count > 0)
+            {
+                EditCustomerAccount();
+                AddPurchasingBill();
+                AddIMBill_Details();
+                EditStore();
+                EditSafe();
+                MessageBox.Show(SharedParameter.Successful_Message);
+
+
+                Form_Bill_Customer_Purchasing print = new Form_Bill_Customer_Purchasing(int.Parse(txt_BillNumber.Text),
+                                                     combo_car.Text,
+                                                     richTextBox1.Text,
+                                                     double.Parse(txt_MaterialTotal.Text),
+                                                     double.Parse(txt_Discount.Text),
+                                                     double.Parse(txt_OldMoney.Text),
+                                                     double.Parse(txt_Payment.Text)
+                                                     );
+                print.ShowDialog();
+                RefForm();
+            }
+            else
+                MessageBox.Show(SharedParameter.Check_Message);
+        }
+
+        private void txt_Payment_TextChanged(object sender, EventArgs e)
+        {
+            if(txt_Payment.Text!="")
+            Calcolate();
+        }
     }
 }

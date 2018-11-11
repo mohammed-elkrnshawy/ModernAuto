@@ -30,12 +30,14 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.combo_car = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_BillNumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_Quantity = new System.Windows.Forms.TextBox();
@@ -45,6 +47,9 @@
             this.comboProduct = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btuSave = new System.Windows.Forms.Button();
             this.txt_Render = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txt_Payment = new System.Windows.Forms.TextBox();
@@ -64,7 +69,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.combo_car = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,19 +76,15 @@
             this.الكمية = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btuSave = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -113,6 +113,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(650, 100);
             this.panel4.TabIndex = 1;
+            // 
+            // combo_car
+            // 
+            this.combo_car.FormattingEnabled = true;
+            this.combo_car.Location = new System.Drawing.Point(211, 55);
+            this.combo_car.Name = "combo_car";
+            this.combo_car.Size = new System.Drawing.Size(285, 21);
+            this.combo_car.TabIndex = 14;
+            this.combo_car.SelectedIndexChanged += new System.EventHandler(this.combo_car_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -152,6 +161,7 @@
             this.txt_BillNumber.Size = new System.Drawing.Size(174, 20);
             this.txt_BillNumber.TabIndex = 8;
             this.txt_BillNumber.Text = "0";
+            this.txt_BillNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -179,6 +189,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(650, 100);
             this.panel3.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::Modern_Auto.Properties.Resources.addition_sign__1_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(314, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // richTextBox1
             // 
@@ -282,6 +305,62 @@
             this.panel7.Size = new System.Drawing.Size(1386, 222);
             this.panel7.TabIndex = 19;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Modern_Auto.Properties.Resources.print_black_printer_tool_symbol;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(92, 126);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 37);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "حفظ و طباعة";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Modern_Auto.Properties.Resources.cancel__1_;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(220, 126);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 37);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "الغاء";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // btuSave
+            // 
+            this.btuSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.btuSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
+            this.btuSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btuSave.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btuSave.ForeColor = System.Drawing.Color.White;
+            this.btuSave.Image = global::Modern_Auto.Properties.Resources.save_disk__2_;
+            this.btuSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btuSave.Location = new System.Drawing.Point(11, 126);
+            this.btuSave.Name = "btuSave";
+            this.btuSave.Size = new System.Drawing.Size(75, 37);
+            this.btuSave.TabIndex = 34;
+            this.btuSave.Text = "حفظ";
+            this.btuSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btuSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btuSave.UseVisualStyleBackColor = false;
+            this.btuSave.Click += new System.EventHandler(this.btuSave_Click);
+            // 
             // txt_Render
             // 
             this.txt_Render.Enabled = false;
@@ -310,6 +389,8 @@
             this.txt_Payment.Size = new System.Drawing.Size(125, 20);
             this.txt_Payment.TabIndex = 28;
             this.txt_Payment.Text = "0";
+            this.txt_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Payment.TextChanged += new System.EventHandler(this.txt_Payment_TextChanged);
             // 
             // label13
             // 
@@ -391,6 +472,7 @@
             this.txt_Discount.Size = new System.Drawing.Size(125, 20);
             this.txt_Discount.TabIndex = 20;
             this.txt_Discount.Text = "0";
+            this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -478,15 +560,6 @@
             this.panel5.Size = new System.Drawing.Size(1386, 348);
             this.panel5.TabIndex = 1;
             // 
-            // combo_car
-            // 
-            this.combo_car.FormattingEnabled = true;
-            this.combo_car.Location = new System.Drawing.Point(211, 55);
-            this.combo_car.Name = "combo_car";
-            this.combo_car.Size = new System.Drawing.Size(285, 21);
-            this.combo_car.TabIndex = 14;
-            this.combo_car.SelectedIndexChanged += new System.EventHandler(this.combo_car_SelectedIndexChanged);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -549,74 +622,6 @@
             this.Column5.ReadOnly = true;
             this.Column5.Width = 200;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = global::Modern_Auto.Properties.Resources.addition_sign__1_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(314, 47);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Modern_Auto.Properties.Resources.print_black_printer_tool_symbol;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(92, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 37);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "حفظ و طباعة";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Modern_Auto.Properties.Resources.cancel__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(220, 126);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 37);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "الغاء";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // btuSave
-            // 
-            this.btuSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.btuSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
-            this.btuSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btuSave.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btuSave.ForeColor = System.Drawing.Color.White;
-            this.btuSave.Image = global::Modern_Auto.Properties.Resources.save_disk__2_;
-            this.btuSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btuSave.Location = new System.Drawing.Point(11, 126);
-            this.btuSave.Name = "btuSave";
-            this.btuSave.Size = new System.Drawing.Size(75, 37);
-            this.btuSave.TabIndex = 34;
-            this.btuSave.Text = "حفظ";
-            this.btuSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btuSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btuSave.UseVisualStyleBackColor = false;
-            this.btuSave.Click += new System.EventHandler(this.btuSave_Click);
-            // 
             // Form_Customer_Purchasing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -633,6 +638,7 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -640,7 +646,6 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

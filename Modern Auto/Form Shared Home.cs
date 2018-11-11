@@ -147,12 +147,7 @@ namespace Modern_Auto
         {
             Add_Tab(تحركاتالمخازنToolStripMenuItem.Text, new Form_Material_Account_Store());
         }
-
-        private void تحركاتالاصنافToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Add_Tab(تحركاتالاصنافToolStripMenuItem.Text, new Form_Material_Account());
-        }
-
+        
         private void اضافةبندمصروفاتToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_Outlay_Add form = new Form_Outlay_Add();

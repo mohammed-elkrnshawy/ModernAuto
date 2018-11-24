@@ -61,6 +61,12 @@
       <DependentUpon>Crystal Customer Purchasing.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Ezzat.cs" />
     <Compile Include="Form Bill Customer Purchasing.cs">
       <SubType>Form</SubType>
@@ -218,6 +224,10 @@
     <EmbeddedResource Include="Crystal Customer Purchasing.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crystal Customer Purchasing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Bill Customer Purchasing.resx">
       <DependentUpon>Form Bill Customer Purchasing.cs</DependentUpon>

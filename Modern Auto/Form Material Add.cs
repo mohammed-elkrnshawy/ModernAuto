@@ -38,14 +38,16 @@ namespace Modern_Auto
             Ezzat.ExecutedNoneQuery("Product_insertProduct"
                                     , new SqlParameter("@ProductName", txt_Name.Text)
                                     , new SqlParameter("@ProductPrice",double.Parse(txt_Price.Text))
-                                    , new SqlParameter("@ProductSPrice",double.Parse(txt_SPrice.Text)));
+                                    , new SqlParameter("@ProductSPrice",double.Parse(txt_SPrice.Text))
+                                    , new SqlParameter("@Product_Time",int.Parse(textBox1.Text))
+                                    );
             MessageBox.Show(SharedParameter.Successful_Message);
             RefForm();
         }
 
         private void RefForm()
         {
-            txt_SPrice.Text = txt_Price.Text = "0";
+            textBox1.Text=txt_SPrice.Text = txt_Price.Text = "0";
             txt_Name.Text = "";
 
             bt_save.Enabled = true;
@@ -94,6 +96,7 @@ namespace Modern_Auto
                     txt_Name.Text = dataReader["Product_Name"].ToString();
                     txt_Price.Text = dataReader["Product_Price"].ToString();
                     txt_SPrice.Text = dataReader["Product_SPrice"].ToString();
+                    textBox1.Text = dataReader["Product_Time"].ToString();
                 }
             }
             con.Close();
@@ -119,7 +122,8 @@ namespace Modern_Auto
                         new SqlParameter("@Product_Name", txt_Name.Text),
                         new SqlParameter("@Product_Price", txt_Price.Text),
                         new SqlParameter("@Product_SPrice", txt_SPrice.Text),
-                        new SqlParameter("@Product_ID", Product_ID)
+                        new SqlParameter("@Product_ID", Product_ID),
+                        new SqlParameter("@Product_Time", textBox1.Text)
                 );
 
             MessageBox.Show(SharedParameter.Successful_Message);

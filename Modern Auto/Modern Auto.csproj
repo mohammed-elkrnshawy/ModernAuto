@@ -80,6 +80,12 @@
     <Compile Include="Form Customer Add.Designer.cs">
       <DependentUpon>Form Customer Add.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form Customer Debtors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Customer Debtors.Designer.cs">
+      <DependentUpon>Form Customer Debtors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form Customer Payback.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,18 @@
     </Compile>
     <Compile Include="Form Customer Purchasing.Designer.cs">
       <DependentUpon>Form Customer Purchasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Employee Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Employee Add.Designer.cs">
+      <DependentUpon>Form Employee Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Employee Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Employee Payment.Designer.cs">
+      <DependentUpon>Form Employee Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="Form Material  Gard.cs">
       <SubType>Form</SubType>
@@ -210,11 +228,20 @@
     <EmbeddedResource Include="Form Customer Add.resx">
       <DependentUpon>Form Customer Add.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form Customer Debtors.resx">
+      <DependentUpon>Form Customer Debtors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Customer Payback.resx">
       <DependentUpon>Form Customer Payback.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Customer Purchasing.resx">
       <DependentUpon>Form Customer Purchasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Employee Add.resx">
+      <DependentUpon>Form Employee Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Employee Payment.resx">
+      <DependentUpon>Form Employee Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Material  Gard.resx">
       <DependentUpon>Form Material  Gard.cs</DependentUpon>

@@ -179,6 +179,21 @@ namespace Modern_Auto
             Add_Tab(ايداعوصرفاموالToolStripMenuItem.Text, new Form_Owner_Money());
         }
 
+        private void اضافةموظفToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Tab("اضافة موظف", new Form_Employee_Add());
+        }
+
+        private void قبضموظفينToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Tab("قبض موظف", new Form_Employee_Payment());
+        }
+
+        private void المديوناتToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Tab("اجمالى المديونات", new Form_Customer_Debtors());
+        }
+
         private void Add_Tab(string Name, Form form)
         {
             TabPage tp = new TabPage(Name);

@@ -54,8 +54,12 @@
             this.رأسالمالToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ايداعوصرفاموالToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ايداعوصرفبضاعةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الموظفينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.اضافةموظفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.قبضموظفينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.المديوناتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -82,7 +86,8 @@
             this.الاصنافوالمخازنToolStripMenuItem,
             this.المصروفاتToolStripMenuItem,
             this.الخزنةToolStripMenuItem,
-            this.رأسالمالToolStripMenuItem});
+            this.رأسالمالToolStripMenuItem,
+            this.الموظفينToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -96,7 +101,8 @@
             this.اضافةسيارةعميلToolStripMenuItem,
             this.فاتورةصيانةجديدةToolStripMenuItem,
             this.تسديدمنعميلToolStripMenuItem,
-            this.حسابعميلToolStripMenuItem});
+            this.حسابعميلToolStripMenuItem,
+            this.المديوناتToolStripMenuItem});
             this.السياراتوالعملاءToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.السياراتوالعملاءToolStripMenuItem.Name = "السياراتوالعملاءToolStripMenuItem";
             this.السياراتوالعملاءToolStripMenuItem.Size = new System.Drawing.Size(137, 25);
@@ -255,7 +261,7 @@
             // حركاتالخزنةToolStripMenuItem
             // 
             this.حركاتالخزنةToolStripMenuItem.Name = "حركاتالخزنةToolStripMenuItem";
-            this.حركاتالخزنةToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.حركاتالخزنةToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.حركاتالخزنةToolStripMenuItem.Text = "حركات الخزنة";
             this.حركاتالخزنةToolStripMenuItem.Click += new System.EventHandler(this.حركاتالخزنةToolStripMenuItem_Click);
             // 
@@ -282,6 +288,30 @@
             this.ايداعوصرفبضاعةToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.ايداعوصرفبضاعةToolStripMenuItem.Text = "الحساب";
             this.ايداعوصرفبضاعةToolStripMenuItem.Click += new System.EventHandler(this.ايداعوصرفبضاعةToolStripMenuItem_Click);
+            // 
+            // الموظفينToolStripMenuItem
+            // 
+            this.الموظفينToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.اضافةموظفToolStripMenuItem,
+            this.قبضموظفينToolStripMenuItem});
+            this.الموظفينToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.الموظفينToolStripMenuItem.Name = "الموظفينToolStripMenuItem";
+            this.الموظفينToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
+            this.الموظفينToolStripMenuItem.Text = "الموظفين";
+            // 
+            // اضافةموظفToolStripMenuItem
+            // 
+            this.اضافةموظفToolStripMenuItem.Name = "اضافةموظفToolStripMenuItem";
+            this.اضافةموظفToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.اضافةموظفToolStripMenuItem.Text = "اضافة موظف";
+            this.اضافةموظفToolStripMenuItem.Click += new System.EventHandler(this.اضافةموظفToolStripMenuItem_Click);
+            // 
+            // قبضموظفينToolStripMenuItem
+            // 
+            this.قبضموظفينToolStripMenuItem.Name = "قبضموظفينToolStripMenuItem";
+            this.قبضموظفينToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.قبضموظفينToolStripMenuItem.Text = "قبض موظفين";
+            this.قبضموظفينToolStripMenuItem.Click += new System.EventHandler(this.قبضموظفينToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -314,6 +344,13 @@
             this.tabPage1.Size = new System.Drawing.Size(1342, 645);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "الرئيسية";
+            // 
+            // المديوناتToolStripMenuItem
+            // 
+            this.المديوناتToolStripMenuItem.Name = "المديوناتToolStripMenuItem";
+            this.المديوناتToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
+            this.المديوناتToolStripMenuItem.Text = "المديونات";
+            this.المديوناتToolStripMenuItem.Click += new System.EventHandler(this.المديوناتToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -380,6 +417,10 @@
         private System.Windows.Forms.ToolStripMenuItem ايداعوصرفاموالToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ايداعوصرفبضاعةToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem الموظفينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem اضافةموظفToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem قبضموظفينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem المديوناتToolStripMenuItem;
     }
 }
 

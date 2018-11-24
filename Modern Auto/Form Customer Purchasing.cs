@@ -13,6 +13,7 @@ namespace Modern_Auto
 {
     public partial class Form_Customer_Purchasing : Form
     {
+        private string car_number, car_kilometer, car_shasah;
         private double totalMaterial;
         private DataSet ds;
         public Form_Customer_Purchasing()
@@ -76,6 +77,10 @@ namespace Modern_Auto
                 while (dataReader.Read())
                 {
                     txt_OldMoney.Text = dataReader["Customer_Money"].ToString();
+                    car_number = dataReader["Car_Number"].ToString();
+                    car_shasah = dataReader["Car_Chaseh"].ToString();
+                    car_kilometer = dataReader["Kilomaters"].ToString();
+
                 }
             }
             con.Close();
@@ -254,7 +259,10 @@ namespace Modern_Auto
                                                      double.Parse(txt_MaterialTotal.Text),
                                                      double.Parse(txt_Discount.Text),
                                                      double.Parse(txt_OldMoney.Text),
-                                                     double.Parse(txt_Payment.Text)
+                                                     double.Parse(txt_Payment.Text),
+                                                     car_kilometer,
+                                                     car_number,
+                                                     car_shasah
                                                      );
                 print.ShowDialog();
                 RefForm();
@@ -266,6 +274,11 @@ namespace Modern_Auto
         private void txt_Payment_TextChanged(object sender, EventArgs e)
         {
             if(txt_Payment.Text!="")
+            Calcolate();
+        }
+
+        private void txt_Discount_TextChanged(object sender, EventArgs e)
+        {
             Calcolate();
         }
     }

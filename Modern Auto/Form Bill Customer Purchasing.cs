@@ -16,9 +16,9 @@ namespace Modern_Auto
     public partial class Form_Bill_Customer_Purchasing : Form
     {
         int Bill_ID;
-        string custome_name, Bill_Details;
+        string custome_name, Bill_Details,car_kilo,car_number,car_shaseh;
         double Bill_Total, Discout, old, payment;
-        public Form_Bill_Customer_Purchasing(int bill_ID, string customername, string BillDetails, double billtotal, double discount, double old, double payment)
+        public Form_Bill_Customer_Purchasing(int bill_ID, string customername, string BillDetails, double billtotal, double discount, double old, double payment,string car_kilo,string car_number,string car_shaseh)
         {
             InitializeComponent();
             this.Bill_ID = bill_ID;
@@ -28,6 +28,9 @@ namespace Modern_Auto
             this.Discout = discount;
             this.old = old;
             this.payment = payment;
+            this.car_kilo = car_kilo;
+            this.car_number = car_number;
+            this.car_shaseh = car_shaseh;
         }
 
         private void Form_Bill_Customer_Purchasing_Load(object sender, EventArgs e)
@@ -58,6 +61,15 @@ namespace Modern_Auto
 
 
 
+            crParameterDiscreteValue.Value = Bill_ID;
+            crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
+            crParameterFieldDefinition = crParameterFieldDefinitions["ID"];
+            crParameterValues = crParameterFieldDefinition.CurrentValues;
+            crParameterValues.Clear();
+            crParameterValues.Add(crParameterDiscreteValue);
+            crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
+
+
 
             crParameterDiscreteValue.Value = custome_name;
             crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
@@ -70,66 +82,39 @@ namespace Modern_Auto
 
 
 
-            //crParameterDiscreteValue.Value = Bill_Details;
-            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
-            //crParameterFieldDefinition = crParameterFieldDefinitions["Bill_Details"];
-            //crParameterValues = crParameterFieldDefinition.CurrentValues;
-            //crParameterValues.Clear();
-            //crParameterValues.Add(crParameterDiscreteValue);
-            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
+            crParameterDiscreteValue.Value = car_number;
+            crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
+            crParameterFieldDefinition = crParameterFieldDefinitions["car_number"];
+            crParameterValues = crParameterFieldDefinition.CurrentValues;
+            crParameterValues.Clear();
+            crParameterValues.Add(crParameterDiscreteValue);
+            crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
 
 
 
 
-            //crParameterDiscreteValue.Value = Bill_ID;
-            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
-            //crParameterFieldDefinition = crParameterFieldDefinitions["ID"];
-            //crParameterValues = crParameterFieldDefinition.CurrentValues;
-            //crParameterValues.Clear();
-            //crParameterValues.Add(crParameterDiscreteValue);
-            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
+            crParameterDiscreteValue.Value = car_kilo;
+            crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
+            crParameterFieldDefinition = crParameterFieldDefinitions["car_kilo"];
+            crParameterValues = crParameterFieldDefinition.CurrentValues;
+            crParameterValues.Clear();
+            crParameterValues.Add(crParameterDiscreteValue);
+            crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
 
 
 
 
-            //crParameterDiscreteValue.Value = Bill_Total;
-            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
-            //crParameterFieldDefinition = crParameterFieldDefinitions["Bill_Total"];
-            //crParameterValues = crParameterFieldDefinition.CurrentValues;
-            //crParameterValues.Clear();
-            //crParameterValues.Add(crParameterDiscreteValue);
-            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
+            crParameterDiscreteValue.Value = car_shaseh;
+            crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
+            crParameterFieldDefinition = crParameterFieldDefinitions["car_shaseh"];
+            crParameterValues = crParameterFieldDefinition.CurrentValues;
+            crParameterValues.Clear();
+            crParameterValues.Add(crParameterDiscreteValue);
+            crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
 
 
 
-            //crParameterDiscreteValue.Value = Discout;
-            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
-            //crParameterFieldDefinition = crParameterFieldDefinitions["Discout"];
-            //crParameterValues = crParameterFieldDefinition.CurrentValues;
-            //crParameterValues.Clear();
-            //crParameterValues.Add(crParameterDiscreteValue);
-            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
-
-
-
-
-            //crParameterDiscreteValue.Value = old;
-            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
-            //crParameterFieldDefinition = crParameterFieldDefinitions["old"];
-            //crParameterValues = crParameterFieldDefinition.CurrentValues;
-            //crParameterValues.Clear();
-            //crParameterValues.Add(crParameterDiscreteValue);
-            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
-
-            //crParameterDiscreteValue.Value = payment;
-            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
-            //crParameterFieldDefinition = crParameterFieldDefinitions["payment"];
-            //crParameterValues = crParameterFieldDefinition.CurrentValues;
-            //crParameterValues.Clear();
-            //crParameterValues.Add(crParameterDiscreteValue);
-            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
-
-
+          
             crystalReportViewer1.ReportSource = cryRpt;
             crystalReportViewer1.Refresh();
         }

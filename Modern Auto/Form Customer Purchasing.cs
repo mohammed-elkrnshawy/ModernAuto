@@ -13,6 +13,7 @@ namespace Modern_Auto
 {
     public partial class Form_Customer_Purchasing : Form
     {
+        private int Time_Change = 0;
         private string car_number, car_kilometer, car_shasah;
         private double totalMaterial;
         private DataSet ds;
@@ -106,6 +107,7 @@ namespace Modern_Auto
                 while (dataReader.Read())
                 {
                     txt_Price.Text = dataReader["Product_SPrice"].ToString();
+                    Time_Change = (int)dataReader["Product_Time"];
                 }
             }
             con.Close();
@@ -115,7 +117,10 @@ namespace Modern_Auto
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            if(combo_car.SelectedIndex>=0)
             AddRow();
+            else
+                MessageBox.Show(SharedParameter.Check_Message);
         }
 
         private void AddRow()
@@ -129,6 +134,15 @@ namespace Modern_Auto
                 dataGridView1[3, dataGridView1.Rows.Count - 1].Value = txt_Quantity.Text;
                 dataGridView1[4, dataGridView1.Rows.Count - 1].Value = "وحدة";
                 dataGridView1[5, dataGridView1.Rows.Count - 1].Value = String.Format("{0:0.00}", Math.Round((double.Parse(txt_Quantity.Text) * double.Parse(txt_Price.Text)), 2));
+                if(Time_Change==0)
+                {
+                    dataGridView1[6, dataGridView1.Rows.Count - 1].Value = Time_Change;
+                }
+                else
+                {
+                    dataGridView1[6, dataGridView1.Rows.Count - 1].Value = Time_Change + car_kilometer;
+                }
+              
 
 
                 totalMaterial += double.Parse(dataGridView1[5, dataGridView1.Rows.Count - 1].Value.ToString());
@@ -213,6 +227,7 @@ namespace Modern_Auto
                     , new SqlParameter("@Total", float.Parse(item.Cells[5].Value + ""))
                     , new SqlParameter("@Bill_Type", false)
                     , new SqlParameter("@Bill_Date", DateTime.Parse(DateTime.Now.ToString()))
+                    , new SqlParameter("@Time_change",item.Cells[6].Value.ToString())
                     );
             }
         }

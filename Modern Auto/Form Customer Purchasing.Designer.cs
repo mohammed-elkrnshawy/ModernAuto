@@ -47,45 +47,46 @@
             this.comboProduct = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txt_MaterialTotal = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txt_Discount = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txt_AfterDiscount = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_OldMoney = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txt_Total = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txt_Payment = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txt_Render = new System.Windows.Forms.TextBox();
-            this.btuSave = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.الكمية = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btuSave = new System.Windows.Forms.Button();
+            this.txt_Render = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txt_Payment = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txt_Total = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txt_OldMoney = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txt_AfterDiscount = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_Discount = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_MaterialTotal = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.الكمية = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -291,6 +292,18 @@
             this.panel1.Size = new System.Drawing.Size(1386, 680);
             this.panel1.TabIndex = 2;
             // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Location = new System.Drawing.Point(0, 505);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1386, 175);
+            this.panel6.TabIndex = 2;
+            // 
             // panel7
             // 
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -319,150 +332,42 @@
             this.panel7.Size = new System.Drawing.Size(1386, 175);
             this.panel7.TabIndex = 20;
             // 
-            // label10
+            // button1
             // 
-            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(1212, 13);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(141, 28);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "اجمالى الفاتورة";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Modern_Auto.Properties.Resources.print_black_printer_tool_symbol;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(92, 104);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 37);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "حفظ و طباعة";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txt_MaterialTotal
+            // button2
             // 
-            this.txt_MaterialTotal.Enabled = false;
-            this.txt_MaterialTotal.Location = new System.Drawing.Point(1081, 20);
-            this.txt_MaterialTotal.Name = "txt_MaterialTotal";
-            this.txt_MaterialTotal.ReadOnly = true;
-            this.txt_MaterialTotal.Size = new System.Drawing.Size(125, 20);
-            this.txt_MaterialTotal.TabIndex = 18;
-            this.txt_MaterialTotal.Text = "0";
-            this.txt_MaterialTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(892, 13);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 28);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "اجمالى الخصم";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_Discount
-            // 
-            this.txt_Discount.Location = new System.Drawing.Point(761, 20);
-            this.txt_Discount.Name = "txt_Discount";
-            this.txt_Discount.Size = new System.Drawing.Size(125, 20);
-            this.txt_Discount.TabIndex = 20;
-            this.txt_Discount.Text = "0";
-            this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_Discount.TextChanged += new System.EventHandler(this.txt_Discount_TextChanged);
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(532, 13);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(182, 28);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "اجمالى بعد الخصم";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_AfterDiscount
-            // 
-            this.txt_AfterDiscount.Enabled = false;
-            this.txt_AfterDiscount.Location = new System.Drawing.Point(401, 20);
-            this.txt_AfterDiscount.Name = "txt_AfterDiscount";
-            this.txt_AfterDiscount.ReadOnly = true;
-            this.txt_AfterDiscount.Size = new System.Drawing.Size(125, 20);
-            this.txt_AfterDiscount.TabIndex = 22;
-            this.txt_AfterDiscount.Text = "0";
-            this.txt_AfterDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(1212, 52);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(141, 28);
-            this.label15.TabIndex = 23;
-            this.label15.Text = "حساب قديم";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_OldMoney
-            // 
-            this.txt_OldMoney.Enabled = false;
-            this.txt_OldMoney.Location = new System.Drawing.Point(1081, 59);
-            this.txt_OldMoney.Name = "txt_OldMoney";
-            this.txt_OldMoney.ReadOnly = true;
-            this.txt_OldMoney.Size = new System.Drawing.Size(125, 20);
-            this.txt_OldMoney.TabIndex = 24;
-            this.txt_OldMoney.Text = "0";
-            this.txt_OldMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(892, 52);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(141, 28);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "اجمالى الحساب";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_Total
-            // 
-            this.txt_Total.Enabled = false;
-            this.txt_Total.Location = new System.Drawing.Point(761, 59);
-            this.txt_Total.Name = "txt_Total";
-            this.txt_Total.ReadOnly = true;
-            this.txt_Total.Size = new System.Drawing.Size(125, 20);
-            this.txt_Total.TabIndex = 26;
-            this.txt_Total.Text = "0";
-            this.txt_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(532, 52);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(182, 28);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "اجمالى المدفوع";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_Payment
-            // 
-            this.txt_Payment.Location = new System.Drawing.Point(401, 59);
-            this.txt_Payment.Name = "txt_Payment";
-            this.txt_Payment.Size = new System.Drawing.Size(125, 20);
-            this.txt_Payment.TabIndex = 28;
-            this.txt_Payment.Text = "0";
-            this.txt_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_Payment.TextChanged += new System.EventHandler(this.txt_Payment_TextChanged);
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(179, 52);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(182, 28);
-            this.label16.TabIndex = 29;
-            this.label16.Text = "المبلغ الباقى";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_Render
-            // 
-            this.txt_Render.Enabled = false;
-            this.txt_Render.Location = new System.Drawing.Point(48, 59);
-            this.txt_Render.Name = "txt_Render";
-            this.txt_Render.ReadOnly = true;
-            this.txt_Render.Size = new System.Drawing.Size(125, 20);
-            this.txt_Render.TabIndex = 30;
-            this.txt_Render.Text = "0";
-            this.txt_Render.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Modern_Auto.Properties.Resources.cancel__1_;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(220, 104);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 37);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "الغاء";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // btuSave
             // 
@@ -483,124 +388,150 @@
             this.btuSave.UseVisualStyleBackColor = false;
             this.btuSave.Click += new System.EventHandler(this.btuSave_Click);
             // 
-            // button2
+            // txt_Render
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Modern_Auto.Properties.Resources.cancel__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(220, 104);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 37);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "الغاء";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.txt_Render.Enabled = false;
+            this.txt_Render.Location = new System.Drawing.Point(48, 59);
+            this.txt_Render.Name = "txt_Render";
+            this.txt_Render.ReadOnly = true;
+            this.txt_Render.Size = new System.Drawing.Size(125, 20);
+            this.txt_Render.TabIndex = 30;
+            this.txt_Render.Text = "0";
+            this.txt_Render.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // label16
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Modern_Auto.Properties.Resources.print_black_printer_tool_symbol;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(92, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 37);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "حفظ و طباعة";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(179, 52);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(182, 28);
+            this.label16.TabIndex = 29;
+            this.label16.Text = "المبلغ الباقى";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // txt_Payment
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(0, 505);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1386, 175);
-            this.panel6.TabIndex = 2;
+            this.txt_Payment.Location = new System.Drawing.Point(401, 59);
+            this.txt_Payment.Name = "txt_Payment";
+            this.txt_Payment.Size = new System.Drawing.Size(125, 20);
+            this.txt_Payment.TabIndex = 28;
+            this.txt_Payment.Text = "0";
+            this.txt_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Payment.TextChanged += new System.EventHandler(this.txt_Payment_TextChanged);
             // 
-            // panel8
+            // label13
             // 
-            this.panel8.Controls.Add(this.dataGridView1);
-            this.panel8.Location = new System.Drawing.Point(0, 106);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1382, 283);
-            this.panel8.TabIndex = 1;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(532, 52);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(182, 28);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "اجمالى المدفوع";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // txt_Total
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.الكمية,
-            this.Column4,
-            this.Column5});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1.Size = new System.Drawing.Size(1382, 283);
-            this.dataGridView1.TabIndex = 3;
+            this.txt_Total.Enabled = false;
+            this.txt_Total.Location = new System.Drawing.Point(761, 59);
+            this.txt_Total.Name = "txt_Total";
+            this.txt_Total.ReadOnly = true;
+            this.txt_Total.Size = new System.Drawing.Size(125, 20);
+            this.txt_Total.TabIndex = 26;
+            this.txt_Total.Text = "0";
+            this.txt_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Column5
+            // label14
             // 
-            this.Column5.HeaderText = "الاجمالى";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 200;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(892, 52);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(141, 28);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "اجمالى الحساب";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column4
+            // txt_OldMoney
             // 
-            this.Column4.HeaderText = "الوحدة";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            this.txt_OldMoney.Enabled = false;
+            this.txt_OldMoney.Location = new System.Drawing.Point(1081, 59);
+            this.txt_OldMoney.Name = "txt_OldMoney";
+            this.txt_OldMoney.ReadOnly = true;
+            this.txt_OldMoney.Size = new System.Drawing.Size(125, 20);
+            this.txt_OldMoney.TabIndex = 24;
+            this.txt_OldMoney.Text = "0";
+            this.txt_OldMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // الكمية
+            // label15
             // 
-            this.الكمية.HeaderText = "الكمية";
-            this.الكمية.Name = "الكمية";
-            this.الكمية.ReadOnly = true;
+            this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(1212, 52);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(141, 28);
+            this.label15.TabIndex = 23;
+            this.label15.Text = "حساب قديم";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column3
+            // txt_AfterDiscount
             // 
-            this.Column3.HeaderText = "سعر المنتج ";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
+            this.txt_AfterDiscount.Enabled = false;
+            this.txt_AfterDiscount.Location = new System.Drawing.Point(401, 20);
+            this.txt_AfterDiscount.Name = "txt_AfterDiscount";
+            this.txt_AfterDiscount.ReadOnly = true;
+            this.txt_AfterDiscount.Size = new System.Drawing.Size(125, 20);
+            this.txt_AfterDiscount.TabIndex = 22;
+            this.txt_AfterDiscount.Text = "0";
+            this.txt_AfterDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Column2
+            // label12
             // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "اسم المنتج";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(532, 13);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(182, 28);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "اجمالى بعد الخصم";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column1
+            // txt_Discount
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "رقم المنتج";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 81;
+            this.txt_Discount.Location = new System.Drawing.Point(761, 20);
+            this.txt_Discount.Name = "txt_Discount";
+            this.txt_Discount.Size = new System.Drawing.Size(125, 20);
+            this.txt_Discount.TabIndex = 20;
+            this.txt_Discount.Text = "0";
+            this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Discount.TextChanged += new System.EventHandler(this.txt_Discount_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(892, 13);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(141, 28);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "اجمالى الخصم";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_MaterialTotal
+            // 
+            this.txt_MaterialTotal.Enabled = false;
+            this.txt_MaterialTotal.Location = new System.Drawing.Point(1081, 20);
+            this.txt_MaterialTotal.Name = "txt_MaterialTotal";
+            this.txt_MaterialTotal.ReadOnly = true;
+            this.txt_MaterialTotal.Size = new System.Drawing.Size(125, 20);
+            this.txt_MaterialTotal.TabIndex = 18;
+            this.txt_MaterialTotal.Text = "0";
+            this.txt_MaterialTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(1212, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(141, 28);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "اجمالى الفاتورة";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -622,6 +553,85 @@
             this.panel9.Size = new System.Drawing.Size(1378, 97);
             this.panel9.TabIndex = 2;
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.dataGridView1);
+            this.panel8.Location = new System.Drawing.Point(0, 106);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1382, 283);
+            this.panel8.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.الكمية,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridView1.Size = new System.Drawing.Size(1382, 283);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.HeaderText = "رقم المنتج";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 81;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "اسم المنتج";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "سعر المنتج ";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 150;
+            // 
+            // الكمية
+            // 
+            this.الكمية.HeaderText = "الكمية";
+            this.الكمية.Name = "الكمية";
+            this.الكمية.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "الوحدة";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "الاجمالى";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 200;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column6.HeaderText = "ميعاد تغيير";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 81;
+            // 
             // Form_Customer_Purchasing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -640,12 +650,12 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -693,12 +703,13 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn الكمية;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

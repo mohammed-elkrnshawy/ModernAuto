@@ -75,5 +75,14 @@ namespace Modern_Auto
                 }
             }
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dataGridView1.CurrentRow.Cells[4].Value.Equals("بيع الى عميل"))
+            {
+                Form_Customer_Details details = new Form_Customer_Details((int)dataGridView1.CurrentRow.Cells[0].Value);
+                details.ShowDialog();
+            }
+        }
     }
 }

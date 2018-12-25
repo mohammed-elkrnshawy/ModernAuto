@@ -55,8 +55,14 @@ namespace Modern_Auto
             }
 
             dataGridView1.Rows.Clear();
-          
 
+            txt_MaterialTotal.Text = txt_Discount.Text = txt_AfterDiscount.Text = "0";
+            txt_OldMoney.Text = txt_Payment.Text = "0";
+            txt_Total.Text = "0";
+            txt_Render.Text = "0";
+            txt_MaterialTotal.Text = "0";
+            txt_AfterDiscount.Text = "0";
+            totalMaterial = 0;
         }
 
         private void combo_car_SelectedIndexChanged(object sender, EventArgs e)
@@ -85,6 +91,7 @@ namespace Modern_Auto
                 }
             }
             con.Close();
+            Calcolate();
         }
 
         private void comboProduct_SelectedIndexChanged(object sender, EventArgs e)
@@ -286,14 +293,41 @@ namespace Modern_Auto
                 MessageBox.Show(SharedParameter.Check_Message);
         }
 
+        private void txt_Discount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SharedParameter.KeyPress(txt_Discount, e);
+        }
+
+        private void txt_Payment_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SharedParameter.KeyPress(txt_Payment, e);
+        }
+
+        private void txt_Quantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SharedParameter.KeyPress(txt_Quantity, e);
+        }
+
+        private void dataGridView1_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            totalMaterial -= double.Parse(dataGridView1.CurrentRow.Cells[5].Value.ToString());
+            Calcolate();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RefForm();
+        }
+
         private void txt_Payment_TextChanged(object sender, EventArgs e)
         {
-            if(txt_Payment.Text!="")
+            SharedParameter.Change(txt_Payment);
             Calcolate();
         }
 
         private void txt_Discount_TextChanged(object sender, EventArgs e)
         {
+            SharedParameter.Change(txt_Discount);
             Calcolate();
         }
     }

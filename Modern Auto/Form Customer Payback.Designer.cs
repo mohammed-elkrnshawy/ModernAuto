@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.combo_name = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btuSave = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -68,24 +67,6 @@
             this.combo_name.TabIndex = 24;
             this.combo_name.SelectedIndexChanged += new System.EventHandler(this.combo_name_SelectedIndexChanged);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(84)))), ((int)(((byte)(102)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Modern_Auto.Properties.Resources.print_black_printer_tool_symbol;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(92, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 37);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "حفظ و طباعة";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
@@ -95,7 +76,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Modern_Auto.Properties.Resources.cancel__1_;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(220, 70);
+            this.button2.Location = new System.Drawing.Point(106, 70);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 37);
             this.button2.TabIndex = 39;
@@ -129,7 +110,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.button2);
             this.panel6.Controls.Add(this.btuSave);
             this.panel6.Location = new System.Drawing.Point(0, 458);
@@ -347,7 +327,6 @@
         #endregion
 
         private System.Windows.Forms.ComboBox combo_name;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btuSave;
         private System.Windows.Forms.Panel panel6;

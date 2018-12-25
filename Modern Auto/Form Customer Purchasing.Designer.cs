@@ -231,6 +231,7 @@
             this.txt_Quantity.Size = new System.Drawing.Size(106, 20);
             this.txt_Quantity.TabIndex = 16;
             this.txt_Quantity.Text = "0";
+            this.txt_Quantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Quantity_KeyPress);
             // 
             // label5
             // 
@@ -368,6 +369,7 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btuSave
             // 
@@ -418,6 +420,7 @@
             this.txt_Payment.Text = "0";
             this.txt_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_Payment.TextChanged += new System.EventHandler(this.txt_Payment_TextChanged);
+            this.txt_Payment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Payment_KeyPress);
             // 
             // label13
             // 
@@ -501,6 +504,7 @@
             this.txt_Discount.Text = "0";
             this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_Discount.TextChanged += new System.EventHandler(this.txt_Discount_TextChanged);
+            this.txt_Discount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Discount_KeyPress);
             // 
             // label11
             // 
@@ -582,6 +586,7 @@
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.Size = new System.Drawing.Size(1382, 283);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dataGridView1_UserDeletingRow);
             // 
             // Column1
             // 

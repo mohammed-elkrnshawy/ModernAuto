@@ -25,11 +25,11 @@ namespace Modern_Auto
         {
             if(comboBox1.Focused)
             {
-                if(comboBox1.SelectedIndex==0)
+                if(comboBox1.SelectedIndex==1)
                 {
                     pictureBox1.BackgroundImage = Properties.Resources.z181kOf3zB_400x400;
                 }
-                else if (comboBox1.SelectedIndex == 1)
+                else if (comboBox1.SelectedIndex == 0)
                 {
                     pictureBox1.BackgroundImage = Properties.Resources.z2download;
                 }

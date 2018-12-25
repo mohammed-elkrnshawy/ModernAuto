@@ -40,6 +40,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -48,23 +50,21 @@
             this.tb_carShaseh = new System.Windows.Forms.TextBox();
             this.tb_carNumber = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -199,6 +199,23 @@
             this.panel6.Size = new System.Drawing.Size(650, 42);
             this.panel6.TabIndex = 21;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Modern_Auto.Properties.Resources.search__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(518, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 20);
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(108, 10);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(404, 20);
+            this.textBox6.TabIndex = 22;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.dataGridView1);
@@ -292,6 +309,15 @@
             this.panel3.Size = new System.Drawing.Size(650, 553);
             this.panel3.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 285);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 41);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
@@ -332,32 +358,6 @@
             this.label1.Text = "اضافة و تعديل سيارة عميل";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(108, 10);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(404, 20);
-            this.textBox6.TabIndex = 22;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Modern_Auto.Properties.Resources.search__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(518, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 20);
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 285);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(44, 41);
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form_Customer_Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,14 +373,14 @@
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

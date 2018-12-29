@@ -194,6 +194,18 @@ namespace Modern_Auto
             Add_Tab("اجمالى المديونات", new Form_Customer_Debtors());
         }
 
+        private void نسخالمحتوىToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Shared_Backup backup = new Form_Shared_Backup();
+            backup.ShowDialog();
+        }
+
+        private void استعادةالمحتوىToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ٍShared_Restore form = new Form_ٍShared_Restore();
+            form.ShowDialog();
+        }
+
         private void Add_Tab(string Name, Form form)
         {
             TabPage tp = new TabPage(Name);

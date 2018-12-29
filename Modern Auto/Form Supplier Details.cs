@@ -30,6 +30,42 @@ namespace Modern_Auto
                 dataGridView1.DataSource = ds.Tables["X"];
                 dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
+
+
+            ShowDetails();
+        }
+
+        private void ShowDetails()
+        {
+            SqlConnection con;
+            SqlDataReader dataReader = Ezzat.GetDataReader("supplier_selectBillDetails2", out con, new SqlParameter("@bill_ID", bill_ID));
+
+
+            if (dataReader.HasRows)
+            {
+                while (dataReader.Read())
+                {
+                    //tb_name.Text = dataReader["Customer_Name"].ToString();
+                    //tb_carNumber.Text = dataReader["Car_Number"].ToString();
+                    //tb_carShaseh.Text = dataReader["Car_Chaseh"].ToString();
+                    //comboBox1.Text = dataReader["Car_Type"].ToString();
+                    //tb_phone.Text = dataReader["Customer_Phone"].ToString();
+                    //tb_kilo.Text = dataReader["Kilomaters"].ToString();
+
+
+                    txt_AfterDiscount.Text = dataReader["After_Discount"].ToString();
+                    txt_Discount.Text = dataReader["Discount_Money"].ToString();
+                    txt_MaterialTotal.Text = dataReader["Material_Money"].ToString();
+                    txt_OldMoney.Text = dataReader["Total_oldMoney"].ToString();
+                    txt_Payment.Text = dataReader["Payment_Money"].ToString();
+                    txt_Render.Text = dataReader["After_Payment"].ToString();
+                    txt_Total.Text = dataReader["Total_Money"].ToString();
+
+                }
+            }
+            con.Close();
+
+
         }
     }
 }

@@ -42,6 +42,9 @@ namespace Modern_Auto
                 comboBox1.Text = "";
                 comboBox1.SelectedText = "اختار بند مصروفات";
             }
+
+            richTextBox1.Text = "لا يوجد ملاحظات";
+            textBox4.Text = "0";
         }
 
         private void btuSave_Click(object sender, EventArgs e)
@@ -82,6 +85,11 @@ namespace Modern_Auto
                 new SqlParameter("@Report_Date", DateTime.Parse(DateTime.Now.ToString())),
                 new SqlParameter("@Report_Band", comboBox1.SelectedValue)
                 );
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RefForm();
         }
     }
 }

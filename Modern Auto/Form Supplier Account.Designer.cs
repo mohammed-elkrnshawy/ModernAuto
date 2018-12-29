@@ -147,7 +147,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(709, 57);
+            this.label5.Location = new System.Drawing.Point(709, 14);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 30);
             this.label5.TabIndex = 34;
@@ -157,7 +157,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(709, 14);
+            this.label4.Location = new System.Drawing.Point(709, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(198, 30);
             this.label4.TabIndex = 33;

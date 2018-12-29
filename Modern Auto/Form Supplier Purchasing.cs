@@ -53,8 +53,17 @@ namespace Modern_Auto
             }
 
             dataGridView1.Rows.Clear();
-            txt_afterDiscount.Text = txt_afterPayment.Text = txt_discount.Text = "0.00";
-            txt_oldTotal.Text = txt_payment.Text = txt_Price.Text = txt_quantity.Text = txt_total.Text = txt_totalMaterial.Text = "0";
+
+            txt_quantity.Text = txt_Price.Text = "0";
+
+            txt_totalMaterial.Text = txt_discount.Text = txt_afterDiscount.Text = "0";
+            txt_oldTotal.Text = txt_payment.Text = "0";
+            txt_total.Text = "0";
+            txt_afterPayment.Text = "0";
+            txt_totalMaterial.Text = "0";
+            txt_afterDiscount.Text = "0";
+            totalMaterial = 0;
+
 
         }
 
@@ -252,7 +261,7 @@ namespace Modern_Auto
                         ,new SqlParameter("@Discount_Money",double.Parse(txt_discount.Text))
                         ,new SqlParameter("@After_Discount",double.Parse(txt_afterDiscount.Text))
                         ,new SqlParameter("@Total_oldMoney",double.Parse(txt_oldTotal.Text))
-                        ,new SqlParameter("@Total_Money",double.Parse(txt_oldTotal.Text))
+                        ,new SqlParameter("@Total_Money",double.Parse(txt_total.Text))
                         ,new SqlParameter("@Payment_Money",double.Parse(txt_payment.Text))
                         ,new SqlParameter("@After_Payment",double.Parse(txt_afterPayment.Text))
                         ,new SqlParameter("@Bill_Details",richTextBox1.Text)
@@ -263,6 +272,11 @@ namespace Modern_Auto
         private void EditSuplierAccount()
         {
             Ezzat.ExecutedNoneQuery("Supplier_updateTotalMoney", new SqlParameter("@Supplier_ID",combo_name.SelectedValue), new SqlParameter("@Total_Money", double.Parse(txt_afterPayment.Text)));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RefForm();
         }
     }
 }

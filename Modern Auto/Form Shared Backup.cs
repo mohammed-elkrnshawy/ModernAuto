@@ -28,8 +28,7 @@ namespace Modern_Auto
         {
             try
             {
-                String path = string.Format("{0}\\Modern_Auto {1}{2}.bak", textBox1.Text, DateTime.Now.ToShortDateString().Replace('/', '-'), DateTime.Now.ToShortTimeString().Replace(':', '-'));
-
+                String path = string.Format("{0}\\ShopDB {1}{2}.bak", textBox1.Text, DateTime.Now.ToShortDateString().Replace('/', '-'), DateTime.Now.ToShortTimeString().Replace(':', '-'));
                 More.Backup(path);
                 MessageBox.Show(SharedParameter.Successful_Message);
 

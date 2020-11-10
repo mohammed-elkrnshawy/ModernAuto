@@ -118,6 +118,8 @@
             // 
             // combo_car
             // 
+            this.combo_car.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.combo_car.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.combo_car.FormattingEnabled = true;
             this.combo_car.Location = new System.Drawing.Point(211, 55);
             this.combo_car.Name = "combo_car";
@@ -263,6 +265,8 @@
             // 
             // comboProduct
             // 
+            this.comboProduct.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboProduct.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboProduct.FormattingEnabled = true;
             this.comboProduct.Location = new System.Drawing.Point(248, 14);
             this.comboProduct.Name = "comboProduct";

@@ -39,8 +39,10 @@ namespace Modern_Auto
             string directory = Path.GetDirectoryName(path); //without file name
             string oneUp = Path.GetDirectoryName(directory); // Temp folder
             ReportDocument cryRpt = new ReportDocument();
-           // cryRpt.Load(Application.StartupPath + @"\Crystal Customer Purchasing.rpt");
-            cryRpt.Load(@"C:\Users\3ZT\source\repos\Modern Auto\Modern Auto\CrystalReport1.rpt");
+
+
+            cryRpt.Load(path + @"\CrystalReport1.rpt");
+            //cryRpt.Load(@"E:\FCI\Projects\C#\ModernAuto\Modern Auto\CrystalReportBill.rpt");
 
 
             ParameterFieldDefinitions crParameterFieldDefinitions;

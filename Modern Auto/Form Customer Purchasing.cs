@@ -140,14 +140,15 @@ namespace Modern_Auto
                 dataGridView1[2, dataGridView1.Rows.Count - 1].Value = txt_Price.Text;
                 dataGridView1[3, dataGridView1.Rows.Count - 1].Value = txt_Quantity.Text;
                 dataGridView1[4, dataGridView1.Rows.Count - 1].Value = "وحدة";
-                dataGridView1[5, dataGridView1.Rows.Count - 1].Value = String.Format("{0:0.00}", Math.Round((double.Parse(txt_Quantity.Text) * double.Parse(txt_Price.Text)), 2));
+                dataGridView1[5, dataGridView1.Rows.Count - 1].Value = String.Format("{0:0.00}", Math.Round((double.Parse(txt_Quantity.Text)
+                    * double.Parse(txt_Price.Text)), 2));
                 if(Time_Change==0)
                 {
                     dataGridView1[6, dataGridView1.Rows.Count - 1].Value = Time_Change;
                 }
                 else
                 {
-                    dataGridView1[6, dataGridView1.Rows.Count - 1].Value = Time_Change + car_kilometer;
+                    dataGridView1[6, dataGridView1.Rows.Count - 1].Value = Time_Change + int.Parse(car_kilometer);
                 }
               
 
@@ -254,6 +255,7 @@ namespace Modern_Auto
                         , new SqlParameter("@Payment_Money", double.Parse(txt_Payment.Text))
                         , new SqlParameter("@After_Payment", double.Parse(txt_Render.Text))
                         , new SqlParameter("@Bill_Details", richTextBox1.Text)
+                        , new SqlParameter("@Report_type", "بيع الى عميل")
                 );
         }
 

@@ -109,13 +109,24 @@ namespace Modern_Auto
 
         private void SaveData()
         {
+            //Ezzat.ExecutedNoneQuery("Customer_insertCustomer"
+            //    , new SqlParameter("@Customer_Name",tb_name.Text)
+            //    , new SqlParameter("@Car_Number",tb_carNumber.Text)
+            //    , new SqlParameter("@Car_Chaseh",tb_carShaseh.Text)
+            //    , new SqlParameter("@Car_Type",comboBox1.Text)
+            //    , new SqlParameter("@Customer_Phone",tb_phone.Text)
+            //    , new SqlParameter("@Kilomaters",tb_kilo.Text)
+            //    , new SqlParameter("@TotalMoney", 0f)
+            //    );
+
             Ezzat.ExecutedNoneQuery("Customer_insertCustomer"
-                , new SqlParameter("@Customer_Name",tb_name.Text)
-                , new SqlParameter("@Car_Number",tb_carNumber.Text)
-                , new SqlParameter("@Car_Chaseh",tb_carShaseh.Text)
-                , new SqlParameter("@Car_Type",comboBox1.Text)
-                , new SqlParameter("@Customer_Phone",tb_phone.Text)
-                , new SqlParameter("@Kilomaters",tb_kilo.Text)
+                , new SqlParameter("@Customer_Name", tb_name.Text)
+                , new SqlParameter("@Car_Number", tb_carNumber.Text)
+                , new SqlParameter("@Car_Chaseh", tb_carShaseh.Text)
+                , new SqlParameter("@Car_Type", comboBox1.Text)
+                , new SqlParameter("@Customer_Phone", tb_phone.Text)
+                , new SqlParameter("@Kilomaters", tb_kilo.Text)
+                , new SqlParameter("@TotalMoney", double.Parse("0"))
                 );
         }
 

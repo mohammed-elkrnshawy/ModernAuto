@@ -93,6 +93,7 @@ namespace Modern_Auto
                 , new SqlParameter("@Company_Address", txAddress.Text)
                 , new SqlParameter("@Phone1", txtPhone.Text)
                 , new SqlParameter("@Phone2", txtPhone2.Text)
+                , new SqlParameter("@TotalMoney", double.Parse("0"))
                 );
         }
 
